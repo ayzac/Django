@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Proyecto1.views import saludo, despedida, dameFecha
+from Proyecto1.views import saludo, despedida, dameFecha, calculaEdad
 
 
 urlpatterns = [
@@ -23,4 +23,5 @@ urlpatterns = [
     path('saludo/', saludo),
     path('adios/', despedida),
     path('fecha/', dameFecha),
+    path('edades/<int:edad>/<int:agno>', calculaEdad ),
 ]
