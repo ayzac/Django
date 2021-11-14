@@ -1,0 +1,47 @@
+<html>
+      <body>
+          <h1>
+              Hola amigos!! Primer uso de las plantillas
+          </h1>
+
+          {# NO TEMAS DISEÑADOR #}
+          {% if nombre_persona == 'Profesor Juan' %}
+            <p>
+              El curso lo imparte el profesor
+            </p>
+            {% else %}
+            <p>
+              El curso no esta disponible
+            </p>
+          {% endif %}
+
+          <p>
+            El nombre del profesor es: {{nombre_persona|lower}} {{apellido_persona.upper}}
+          </p>
+          <p>
+            El dia de hoy es: {{dia_actual.day}} / {{dia_actual.month}} / {{dia_actual.year}}
+          </p>
+
+          <p>
+            <strong>Temas del curso</strong>
+          </p>
+          <p>
+            <ul>
+              {% if temas %}
+                {% for  Tema in temas %}
+                  <p>
+                    <li>
+                      {{Tema | first | lower}}
+                    </li>
+                  </p>
+                {% endfor %}
+
+                {% else %}
+                <p>
+                  No hay ni un elemento.
+                </p>
+              {% endif %}
+            </ul>
+          </p>
+      </body>
+  </html>

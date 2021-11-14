@@ -1,16 +1,32 @@
 from django.http import HttpResponse
 import datetime
+from django.template import Template, Context
+
+
+class Persona(object):
+    def __init__(self, nombre, apellido):
+        self.nombre= nombre
+        self.apellido = apellido
 
 def saludo(request):        #Primera vista
 
-    documento= """ <html>
-        <body>
-            <h1>
-                Hola amigos!! Primer pagina en Django
-            </h1>
-        </body>
-    </html>"""
+    p1= Persona("Profesor Manuel", "Perez")
+    doc_externo = open("/home/ayzac/Desktop/Django/Proyecto1/Proyecto1/plantillas/index.html")
+
+    #nombre = "Isaac"
+    #apellido = "Lopez"
+
+    temasCurso = ["Plantillas","Modelos","Formularios","Vistas","Despliegue"]
+
+    hoy = datetime.datetime.now()
+
+    plt= Template(doc_externo.read())
+    doc_externo.close()
+    ctx = Context({"nombre_persona": p1.nombre, "apellido_persona": p1.apellido, "dia_actual": hoy, "temas":temasCurso})
+    documento =plt.render(ctx)
+
     return HttpResponse(documento)
+
 
 def despedida(request):
     despedida = """<html>
@@ -36,7 +52,7 @@ def dameFecha(request):
 
 
 def calculaEdad(request, edad, agno):
-#    edadActual = 18
+#    edadActual = 18  comentar
     periodo = agno-2019
     edadFutura = edad + periodo
     documentos = """ <html>
