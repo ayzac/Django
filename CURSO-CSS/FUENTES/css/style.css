@@ -1,0 +1,37 @@
+*{
+  margin: noen;
+  padding: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Vujahday Script', cursive;
+  text-align: justify;
+  font-weight: 900;
+}
+
+.seccion{
+  width: 600px;
+  background: #f2f2f2;
+  margin: 20px auto;
+  padding: 40px;
+}
+
+.titulo {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 800;
+  display: inline;
+  font-family: 'Raleway', sans-serif;
+}
+
+.texto {
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.enlace {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}

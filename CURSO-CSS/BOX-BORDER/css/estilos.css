@@ -1,0 +1,11 @@
+div {
+  background: orange;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0px 0px 10px 2px black;
+  -moz-box-shadow: 0px 0px 10px 2px black;
+  -webkit-box-shadow: 0px 0px 10px 2px black;
+}
