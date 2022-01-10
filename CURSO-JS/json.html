@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/favicon.ico" rel="shortcut icon">
+    </head>
+    <body>
+        <div id="contenedor"></div>
+        <script>
+            /*
+             parse(): Acepta una cadena JSON como parámetro y devuelve el objeto
+             JavaScript correspondiente.
+             stringify(): Acepta un objeto como parámetro y devuelve la cadena JSON
+             correspondiente.
+             */
+
+            const objeto = {nombre: "Oscar", edad: 29};
+            console.log(objeto);
+            console.log(typeof (objeto));
+            const jsonString = JSON.stringify(objeto);
+            console.log(jsonString);
+            console.log(typeof (jsonString));
+            const jsonObject = JSON.parse(jsonString);
+            console.log(jsonObject);
+            console.log(typeof (jsonObject));
+
+            const youtuber = {
+                canal: "UskoKruM2010",
+                pais: "Perú",
+                cursos: ["JavaScript", "Python", "Java", "PHP"]
+            };
+            const youtuberJSON = JSON.stringify(youtuber);
+            console.log(youtuberJSON);
+            console.log(typeof (youtuberJSON));
+        </script>
+    </body>
+</html>

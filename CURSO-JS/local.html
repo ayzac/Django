@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LocalStorage | SessionStorage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/favicon.ico" rel="shortcut icon">
+    </head>
+    <body>
+        <script>
+            if (typeof (Storage) !== 'undefined') {
+                console.log(Storage);
+
+                // Asignar elementos:
+                let cursos = ["PHP", "Python", "Java", "C#", "JavaScript"];
+                // localStorage.setItem("cursos", cursos);
+
+                localStorage.setItem("cursos", JSON.stringify(cursos));
+                localStorage.canal = "UskoKruM2010";
+                localStorage.lenguaje = "JavaScript";
+
+                // Leer elementos almacenados:
+                // console.log(localStorage.getItem("cursos"));
+                let cursosAlmacenados = JSON.parse(localStorage.getItem("cursos"));
+                console.log(cursosAlmacenados);
+                console.log(localStorage.lenguaje);
+                // Eliminar un elemento:
+                localStorage.removeItem("canal");
+                // Eliminar todos los elementos:
+                localStorage.clear();
+            } else {
+                alert("Storage no es compatible en este navegador.");
+            }
+        </script>
+    </body>
+</html>

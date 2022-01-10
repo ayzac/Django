@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NaN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/favicon.ico" rel="shortcut icon">
+    </head>
+    <body>
+        <script>
+
+            console.log(Number.NaN);
+            console.log(NaN);
+            console.log(typeof (NaN));
+
+            let variable = "JavaScript";
+            let numero = parseInt(variable);
+            console.log(numero);
+
+            // La función global isNaN() puede ser usada para verificar si
+            // un determinado valor o expresión se evalúa como NaN.
+
+            console.log(isNaN(NaN));
+
+            let edad;
+            do {
+                edad = parseInt(prompt("Ingrese su edad: "));
+            } while (isNaN(edad));
+            console.log(`Edad: ${edad} | Tipo: ${typeof (edad)}`);
+        </script>
+    </body>
+</html>

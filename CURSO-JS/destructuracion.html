@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desestructuración</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/favicon.ico" rel="shortcut icon">
+    </head>
+    <body>
+        <script>
+
+            // Desestructuración de objetos:
+
+            let n, o;
+            ({n, o} = {n: 18, o: false});
+            console.log(n);
+            console.log(o);
+
+            // Rest en la desestructuración de objetos:
+            let {p, q, ...objeto} = {p: 10, q: 35, x: 120, y: 45};
+            console.log(p);
+            console.log(q);
+            console.log(objeto);
+
+
+        </script>
+    </body>
+</html>
