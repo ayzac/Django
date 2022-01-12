@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.boton{
+    background: brown;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+.boton:hover{
+    background: black;
+    color: tomato;
+    border: solid 2px orange;
+    width: 200px;
+    font-size: 24px;
+}
+.boton:active{
+    background: yellow;
+    color: orange;
+}
+
+#parrafo1:target{
+    background: black;
+    color: white;
+}
+#parrafo2:target{
+    background: rgb(255, 0, 0);
+    color: white;
+}
+#parrafo3:target{
+    background: rgb(0, 217, 255);
+    color: white;
+}
+input{
+    display: block;
+    padding: 10px;
+}
+input:focus{
+    background: white;
+    outline-color: green;
+}
+
+p::selection{
+    background: orange;
+    color: white;
+}
+p::first-letter{
+    font-size: 30px;
+}
+p::first-line{
+    font-size: 30px;
+}

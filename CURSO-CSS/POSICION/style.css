@@ -1,0 +1,46 @@
+*{
+  margin 0;
+  padding: 0;
+}
+
+.box {
+  width: 600px;
+  height: 500px;
+  border: 1px solid #000;
+  margin: 20px auto;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  background: #999;
+  line-height: 80px;
+}
+
+.static {
+
+}
+
+.relative {
+
+}
+
+.absolute {
+
+}
+
+.fixed {
+  position: fixed;
+  background: violet;
+  top: 10px;
+  left: ;
+}
+
+.lorem {
+  width: 500px;
+  height: 600px;
+}

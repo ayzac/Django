@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contenedor{
+    border: 10px solid black;
+    display: flex;
+    height: 500px;
+    /*flex-direction: column-reverse;*/
+    align-items: stretch;
+}
+
+.items{
+    font-size: 25px;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+.item1{
+    background: lightblue;
+}
+.item2{
+    background: lightcoral;
+}
+.item3{
+    background: lightgreen;
+}
+.item4{
+    background: lime;
+}

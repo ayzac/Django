@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.cuadrado{
+    margin:60px;
+    width: 45%;
+    height: 500px;
+    background-color: black;
+}
+@media (min-width: 800px) {
+    .cuadrado{
+        background-color: blue;
+        width: 70%;
+    }
+}
+
+/* RESPONSIVE
+
+ESCRITORIOS MUY GRANDES */
+@media (min-width: 1200px){
+
+}
+/* Tablets en horizontal y escritorios normales */
+@media (min-width: 768px) and (max-width: 1999px) {
+
+}
+/*Moviles en horizontal o tablets en vertical*/
+@media (max-width:767px) {
+
+}
+/*Moviles en vertical*/
+@media (max-width:480px) {
+
+}
